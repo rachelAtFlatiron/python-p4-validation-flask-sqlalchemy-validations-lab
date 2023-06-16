@@ -39,7 +39,7 @@ class TestAuthor:
         with app.app_context():
 
             with pytest.raises(ValueError):
-                author = Author(name="Jane Author", phone_number="3311")
+                author = Author(name="Jane Athor", phone_number="3311")
                 author2 = Author(name="Jane Author", phone_number="3312212121212121")
 
                 db.session.add(author)
